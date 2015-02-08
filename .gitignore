@@ -4,3 +4,12 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+/.idea/.name
+/.idea/Kudapoiti.com.ua.iml
+/.idea/deployment.xml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/scopes/scope_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
