@@ -1,0 +1,22 @@
+<?php
+function kudapoiti_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['featured_gallery'] = array(
+    'label' => t('Featured Gallery'),
+    'custom settings' => TRUE,
+  );
+}
+
+// we may attach additional theme functions or templates and add variables
+
+function kudapoiti_view($node, $view_mode) {
+  if ($view_mode == 'featured_gallery') {
+    // add some additional variables for template
+    $node->content['#theme'] = 'kudapoiti_featured_gallery';
+  }
+}
+
+function kudapoiti_preprocess_node(&$vars) {
+  if ($vars['node']->type == 'event' && $vars['view_mode'] == 'featured_gallery') {
+    $vars['theme_hook_suggestions'][] = 'node__event__featured_gallery';
+  }
+}

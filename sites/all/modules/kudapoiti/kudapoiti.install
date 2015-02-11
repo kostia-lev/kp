@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Featured Content module.
+ *
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function kudapoiti_uninstall() {
+}
+
+/**
+ * Implements hook_install().
+ */
+function kudapoiti_install() {
+  // Nothing to do.
+}

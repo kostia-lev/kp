@@ -114,6 +114,7 @@
 
 <!--slides-->
 <div class="slides">
+                    <?php if(false): ?>
 <!--slider-item-->
 <div class="slider-item">
 <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
@@ -138,28 +139,28 @@
 </div>
 <!--EOF:slider-item-->
 
-<!--slider-item-->
-<div class="slider-item">
-<div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
-<div class="slider-item-title">Wine Lovers </div>
-<div class="slider-item-body">Monaco restaurants</div>
-</div>
 <!--EOF:slider-item-->
-
+<?php endif;?>
 <!--slider-item-->
 
-<?php if ($page['slider5']) : ?>
+<!--slider-item-->
 <div class="slider-item">
     <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
     <div class="slider-item-title">Wine Lovers </div>
-    <div class="slider-item-body">
+    <div class="slider-item-body">Monaco restaurants</div>
+</div>
+<!--slider-item-->
+<div class="slider-item">
+    <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
+    <div class="slider-item-title">Wine Lovers </div>
+    <div class="slider-item-body">Monaco restaurants</div>
+</div>
+<?php if ($page['slider5']) : ?>
         <?php print render($page['slider5']); ?>
-    </div>
-    </div>
 <?php endif; ?>
 
 <!--EOF:slider-item-->
-</div> 
+</div>
 <!--EOF:slides-->
 
 <!--slide-control-->
@@ -177,7 +178,7 @@
 <li><a href="#"></a></li>
 <li><a href="#"></a></li>
 </ul>
-<!--EOF:#slide-nav-->                
+<!--EOF:#slide-nav-->
 
 </div>
 <!--EOF:#slideshow-->

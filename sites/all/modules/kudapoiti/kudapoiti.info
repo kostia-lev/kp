@@ -1,0 +1,9 @@
+name = Kudapoiti
+description = Kudapoiti hooks
+core = 7.x
+package = Other
+
+files[] = kudapoiti.install
+files[] = kudapoiti.module
+
+
