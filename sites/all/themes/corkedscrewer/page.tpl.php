@@ -110,11 +110,11 @@
 
             <div class="grid_12">
 <!--#slideshow-->
-<div id="slideshow">
+<!--div id="slideshow"-->
 
-<!--slides-->
-<div class="slides">
                     <?php if(false): ?>
+  <!--slides-->
+  <div class="slides">
 <!--slider-item-->
 <div class="slider-item">
 <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
@@ -140,47 +140,47 @@
 <!--EOF:slider-item-->
 
 <!--EOF:slider-item-->
-<?php endif;?>
-<!--slider-item-->
+    <!--slider-item-->
 
-<!--slider-item-->
-<div class="slider-item">
-    <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
-    <div class="slider-item-title">Wine Lovers </div>
-    <div class="slider-item-body">Monaco restaurants</div>
-</div>
-<!--slider-item-->
-<div class="slider-item">
-    <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
-    <div class="slider-item-title">Wine Lovers </div>
-    <div class="slider-item-body">Monaco restaurants</div>
-</div>
+    <!--slider-item-->
+    <div class="slider-item">
+      <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
+      <div class="slider-item-title">Wine Lovers </div>
+      <div class="slider-item-body">Monaco restaurants</div>
+    </div>
+    <!--slider-item-->
+    <div class="slider-item">
+      <div class="slider-item-image"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/slider-img1.png"/></div>
+      <div class="slider-item-title">Wine Lovers </div>
+      <div class="slider-item-body">Monaco restaurants</div>
+    </div>
+
+    <!--EOF:slider-item-->
+  </div>
+                      <!--EOF:slides-->
+
+                      <!--slide-control-->
+                      <div class="slide-control">
+                        <div id="prev" href="#"><span class="websymbols"><</span></div>
+                        <div id="next" href="#"><span class="websymbols">></span></div>
+                      </div>
+                      <!--EOF:slide-control-->
+
+                      <!--#slide-nav-->
+                      <ul id="slide-nav">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                      </ul>
+<?php endif;?>
 <?php if ($page['slider5']) : ?>
         <?php print render($page['slider5']); ?>
 <?php endif; ?>
-
-<!--EOF:slider-item-->
-</div>
-<!--EOF:slides-->
-
-<!--slide-control-->
-<div class="slide-control">
-<div id="prev" href="#"><span class="websymbols"><</span></div>
-<div id="next" href="#"><span class="websymbols">></span></div>
-</div>
-<!--EOF:slide-control-->
-
-<!--#slide-nav-->
-<ul id="slide-nav">
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
-</ul>
 <!--EOF:#slide-nav-->
 
-</div>
+<!--/div-->
 <!--EOF:#slideshow-->
             </div>    
 
