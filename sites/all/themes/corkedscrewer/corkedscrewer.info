@@ -27,6 +27,8 @@ regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[slider5] = Slider 5
+regions[mainpagefeatured] = Main page featured
+regions[mainpagefeaturedright] = Main page featured right
 
 settings[breadcrumb_display]= 1
 settings[breadcrumb_separator]= '»'

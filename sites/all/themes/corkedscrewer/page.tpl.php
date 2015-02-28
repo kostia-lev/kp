@@ -212,29 +212,10 @@
                 <div id="featured" class="clearfix">
                 
                 <div class="grid_3 alpha">
-                <!--featured-teaser-->
-                <div class="featured-teaser">
-                <div class="featured-teaser-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img1.png"/></a></div>
-                <div class="featured-teaser-title">Monaco restaurants</div>
-                <div class="featured-teaser-body">25</div>
-                </div>
                 <!--EOF:featured-teaser-->
-                
-                <!--featured-teaser-->
-                <div class="featured-teaser">
-                <div class="featured-teaser-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img2.png"/></a></div>
-                <div class="featured-teaser-title">Wine & Meat</div>
-                <div class="featured-teaser-body">25</div>
-                </div>
-                <!--EOF:featured-teaser-->
-                
-                <!--featured-teaser-->
-                <div class="featured-teaser">
-                <div class="featured-teaser-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img3.png"/></a></div>
-                <div class="featured-teaser-title">Best wine deals</div>
-                <div class="featured-teaser-body">25</div>
-                </div> 
-                <!--EOF:featured-teaser-->
+                <?php if ($page['mainpagefeatured']) : ?>
+                    <?php print render($page['mainpagefeatured']); ?>
+                <?php endif; ?>
                 </div>
                 
                 <div class="grid_6">
@@ -248,31 +229,12 @@
                 </div>
                 
                 <div class="grid_3 omega">
-                <!--featured-teaser-->
-                <div class="featured-teaser">
-                <div class="featured-teaser-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img4.png"/></a></div>
-                <div class="featured-teaser-title">Cheese</div>
-                <div class="featured-teaser-body">25</div>
+                    <!--EOF:featured-teaser-->
+                    <?php if ($page['mainpagefeaturedright']) : ?>
+                        <?php print render($page['mainpagefeaturedright']); ?>
+                    <?php endif; ?>
                 </div>
-                <!--EOF:featured-teaser-->
-                
-                <!--featured-teaser-->
-                <div class="featured-teaser">  
-                <div class="featured-teaser-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img5.png"/></a></div>
-                <div class="featured-teaser-title">Red wine</div>
-                <div class="featured-teaser-body">25</div>
-                </div>  
-                <!--EOF:featured-teaser-->
-                
-                <!--featured-teaser-->
-                <div class="featured-teaser">  
-                <div class="featured-teaser-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img6.png"/></a></div>
-                <div class="featured-teaser-title">The best in the world</div>
-                <div class="featured-teaser-body">25</div>
-                </div>  
-                <!--EOF:featured-teaser-->
-                </div>   
-                
+
                 </div>
                 <!--EOF:#featured-->
             </div>
