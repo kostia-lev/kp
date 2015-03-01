@@ -220,12 +220,19 @@
                 
                 <div class="grid_6">
                 <!--featured-->
-                <div class="featured">
-                <div class="featured-image"><a href="#"><img src="<?php print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?>/images/local/ft-img.png"/></a></div>
-                <div class="featured-title"><h2><a href="#">The spirit of Italy</a> <span class="comments">12</span></h2></div>
-                <div class="featured-body">Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers, responsible for approximately one-fifth of world wine production in 2005.</div>
-                </div>
+<!--                <div class="featured">-->
+<!--                <div class="featured-image"><a href="#"><img src="--><?php //print base_path() . drupal_get_path('theme', 'corkedscrewer') ;?><!--/images/local/ft-img.png"/></a></div>-->
+<!--                <div class="featured-title"><h2><a href="#">The spirit of Italy</a> <span class="comments">12</span></h2></div>-->
+<!--                <div class="featured-body">Italian wine is wine produced in Italy, a country-->
+<!--                    which is home to some of the oldest wine-producing regions in the world.-->
+<!--                    Italy is one of the world's foremost producers, responsible for approximately-->
+<!--                    one-fifth of world wine production in 2005.</div>-->
+<!--                </div>-->
                 <!--EOF:featured-->
+                    <!--EOF:featured-teaser-->
+                    <?php if ($page['mainpagefeaturedmainevent']) : ?>
+                        <?php print render($page['mainpagefeaturedmainevent']); ?>
+                    <?php endif; ?>
                 </div>
                 
                 <div class="grid_3 omega">

@@ -786,6 +786,8 @@ _______________________________________________________________________*/
     }
 #featured .featured img {
     margin-bottom: 12px;
+    height: 302px;
+    width: 428px;
     } 
 
 /* `#main-content
