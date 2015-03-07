@@ -1656,3 +1656,7 @@ _______________________________________________________________________*/
 @media all and (min-width: 980px) {
     
 }
+/*custom styles*/
+#block-featured-content-1 {
+    width: 50%;
+}
