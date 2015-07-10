@@ -1,0 +1,22 @@
+#block-views-exp-eventfil-page-1 .views-exposed-widget{
+    clear: both;
+    position: relative;
+    left: 50%
+}
+.ui-selectmenu-menu.ui-front.ui-selectmenu-open{
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#edit-field-category-tid-wrapper{
+    margin-left: -120px;
+}
+#edit-field-mood-tid-wrapper{
+    margin-left: -120px;
+}
+#edit-between-date-filter-wrapper{
+    margin-left: -120px;
+}
+#block-views-exp-eventfil-page-1 .views-exposed-widget.views-submit-button{
+    margin-left: -120px;
+}
