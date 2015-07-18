@@ -20,3 +20,18 @@ function kudapoiti_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node__event__featured_gallery';
   }
 }
+
+function corkedscrewer_preprocess_views_exposed_form(&$vars, $hook) {
+  // Specify the Form ID
+  if ($vars['form']['#id'] == "views-exposed-form-eventfil-page-1") {
+
+
+    // Change the text on the submit button
+    $vars['form']['submit']['#value'] = t('Search');
+
+
+    // Rebuild the rendered version (submit button, rest remains unchanged)
+    unset($vars['form']['submit']['#printed']);
+    $vars['button'] = drupal_render($vars['form']['submit']);
+  }
+}
