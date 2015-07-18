@@ -1667,3 +1667,7 @@ _______________________________________________________________________*/
     width: 50%;
     float: right;
 }
+.field-name-field-field-carousel-image img {
+    height: 250px;
+    width: 470px;
+}

@@ -8,8 +8,10 @@ function corkedscrewer_preprocess_html(&$variables) {
 	endif;
 
 	drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('!IE' => FALSE), 'preprocess' => FALSE));
-}
+	drupal_add_css('https://code.jquery.com/ui/1.11.4/themes/hot-sneaks/jquery-ui.css', array('type' => 'external'));
 
+}
+drupal_add_js(drupal_get_path('theme', 'corkedscrewer') . '/js/custom.js');
 
 /**
  * Add javascript files for jquery slideshow.

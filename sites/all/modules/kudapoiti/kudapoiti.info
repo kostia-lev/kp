@@ -6,4 +6,5 @@ package = Other
 files[] = kudapoiti.install
 files[] = kudapoiti.module
 
+stylesheets[all][] = css/custom.css
 
